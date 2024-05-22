@@ -1,0 +1,19 @@
+.product-fields{
+    display: grid;
+    grid-template-areas:
+        "productId productName productPrice productColor" ;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+.product-field-id{
+    grid-template-areas: productId;
+}
+.product-field-name{
+    grid-template-areas: productName;
+}
+.product-field-price{
+    grid-template-areas: productPrice;
+}
+.product-field-color{
+    grid-template-areas: productColor;
+}

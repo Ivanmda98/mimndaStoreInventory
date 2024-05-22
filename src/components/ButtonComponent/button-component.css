@@ -1,0 +1,40 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    max-width: 180px;
+    border-radius: 10px;
+    border: transparent;
+    transition: ease all;
+}
+.btn-update{
+    background-color: orange;
+}
+.btn-update:hover,
+.btn-delete:hover,
+.btn-create:hover,
+.btn-search:hover,
+.btn-cancel:hover,
+.btn-save:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.btn-delete{
+    background-color: red;
+}
+.btn-create{
+    background-color: rgb(80, 215, 252);
+    color: white;
+}
+.btn-search{
+    background-color: yellow;
+}
+.btn-save{
+    background-color: green;
+}
+.btn-cancel{
+    background-color: brown;
+    color: white;
+}

@@ -1,0 +1,68 @@
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    background-color: beige;
+    margin: 0 50px 0 50px;
+}
+.header{
+    display: grid;
+    grid-template-areas: 
+        "itemId itemName itemPrice itemColor itemDate";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px;
+    gap: 1rem;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.item-header-id{
+    grid-area: itemId;
+}
+.item-header-name{
+    grid-area: itemName;
+}
+.item-header-price{
+    grid-area: itemPrice;
+}
+.item-header-color{
+    grid-area: itemColor;
+}
+.item-header-dete{
+    grid-area: itemDate;
+}
+.product-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    overflow: scroll;
+    max-height: 650px;
+    margin: 0 50px 0 50px;
+}
+.product-container{
+    display: grid;
+    grid-template-areas: 
+    "product product product product product updateProduct";
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-bottom: 20px;
+
+}
+.product-fields{
+    grid-area: product;
+}
+.container-methods{
+    grid-area: updateProduct;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navigation-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+    margin: 15px 0 15px 0;
+    
+}
